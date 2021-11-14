@@ -21,14 +21,20 @@ all: $(OBJS)
 	@echo "Building ISO"
 	@rm -rf pios/boot/grub/
 	@mkdir pios/boot/grub/
-	@echo "set default=0" 					>> pios/boot/grub/grub.cfg
-	@echo "set timeout=0" 					>> pios/boot/grub/grub.cfg
-	@echo "menuentry \"PIOS\" {"	 		>> pios/boot/grub/grub.cfg
-	@echo "multiboot /boot/kernel.bin"	 	>> pios/boot/grub/grub.cfg
-	@echo "}" 								>> pios/boot/grub/grub.cfg
+	@echo "set default=0"                >> pios/boot/grub/grub.cfg
+	@echo "set timeout=0"                >> pios/boot/grub/grub.cfg
+	@echo "menuentry \"PIOS\" {"         >> pios/boot/grub/grub.cfg
+	@echo "multiboot /boot/kernel.bin"   >> pios/boot/grub/grub.cfg
+	@echo "}"                            >> pios/boot/grub/grub.cfg
 
 	grub-mkrescue -o pios.iso pios/
 
+
+setup:
+	@mkdir -p obj
+	@$(PM-COMMAND) gcc
+	@$(PM-COMMAND) nasm
+	@$(PM-COMMAND) qemu
 
 
 run: $(OBJS)
