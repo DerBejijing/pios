@@ -9,7 +9,7 @@ More on that later.
 
 
 # Why?
-I learned a lot
+It's not why, it's why not
 
 
 # Why is it not fully working yet?
