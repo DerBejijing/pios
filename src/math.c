@@ -48,12 +48,12 @@ string uint64_to_string(uint64 num) {
 
 void calculate_pi_gl(uint8 visualOutput) {
 
-	print("\nStill to be developed :(\n");
+	print("\nStill to be developed (README.md) :(\n");
 
 }
 
 void calculate_pi_n(uint8 visualOutput) {
 
-	print("\nStill to be developed :(\n");
+	print("\nStill to be developed (README.md) :(\n");
 
 }
