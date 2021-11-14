@@ -7,7 +7,6 @@ LINKER_FLAGS = -m elf_i386 -T src/link.ld
 EMULATOR = qemu-system-i386
 EMULATOR_FLAGS = -enable-kvm -kernel
 
-
 OBJS = obj/kasm.o obj/kc.o obj/string.o obj/system.o obj/screen.o obj/pios.o obj/keyboard.o obj/menu.o obj/math.o
 OUTPUT = pios/boot/kernel.bin
 
@@ -44,8 +43,7 @@ run: $(OBJS)
 	$(LINKER) $(LINKER_FLAGS) -o $(OUTPUT) $(OBJS)
 	@echo "Running..."
 	$(EMULATOR) $(EMULATOR_FLAGS) $(OUTPUT)
-
-
+	
 
 obj/kasm.o:src/kernel.asm
 	$(ASSEMBLER) $(ASSEMBLER_FLAGS) -o obj/kasm.o src/kernel.asm
