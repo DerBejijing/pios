@@ -30,10 +30,7 @@ all: $(OBJS)
 
 
 setup:
-	@mkdir -p obj
-	@$(PM-COMMAND) gcc
-	@$(PM-COMMAND) nasm
-	@$(PM-COMMAND) qemu
+	@mkdir -p obj/
 
 
 run: $(OBJS)
