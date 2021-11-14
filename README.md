@@ -4,7 +4,7 @@ One of the most useless things I ever made
 <br/>
 
 # About this project
-This is an operating system with the only purpose of calculating pi (and Euler's number because why not). Even very well optimised programs for approximating pi have (in most cases) a major flaw: there is too much bloat running in the background that makes computing pi a lot slower. Even well-optimised operating systems like arch-linux are in most cases still using more than 16mb of RAM! A disaster!!  
+This is an operating system with the only purpose of calculating pi (and Euler's number because why not). Even very well optimized programs for approximating pi have (in most cases) a major flaw: there is too much bloat running in the background that makes computing pi a lot slower. Even well-optimized operating systems like arch-linux are in most cases still using more than 16mb of RAM! A disaster!!  
 Saying it is one of the most useless things I ever made is actually not true. It is _the_ most useless thing I ever made, which is because it is not working yet :(  
 More on that later.  
 
@@ -32,3 +32,14 @@ To build and emulate the operating system, run: `make run`
 
 To build and make an ISO image you can then put on a usb-drive, a disk or a floppy, run: `make all`  
 This is create a "pios.iso" file.
+
+<br/>
+
+# Whom to blame for this?
+- Me of course :(  
+- The idea is by [MisterSilversagle](https://github.com/MisterSilvereagle) and me  
+- It would not have been possible without [this guy's](https://www.youtube.com/channel/UCofr5KcAmI_CB_tCYpVzZEw) great tutorial series
+
+<br/>
+
+Pease note all the sarcasm behind my writing 
