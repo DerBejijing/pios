@@ -6,7 +6,7 @@
 
 // kernel entrypoint
 void kmain() {
-
+	
 	// clears the screen
 	clear_screen();
 	
