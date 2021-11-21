@@ -17,8 +17,10 @@ int32 string_to_int32(string str) {
 
 	// iterate backwards
 	for(int16 pos = str_len(str)-1; pos >= 0; --pos) {
+		
 		// check if the resulting number will be positive
 		if(str[pos] != '-') {
+			
 			// convert character to an int and subtract 48
 			// that way the ascii-value 48 refers to 0, 49 to 1 and so on
 			add = str[pos] - 48;
@@ -27,6 +29,7 @@ int32 string_to_int32(string str) {
 			result += add * multiplier;
 			multiplier *= 10;
 		} else {
+			
 			// multiply result with -1
 			return result * -1;
 		}
