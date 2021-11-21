@@ -8,7 +8,7 @@ char get_keystroke() {
 	
 	// keep reading until an inportant key is pressed
 	while(reading) {
-
+		
 		// check if a key is pressed
 		if(inportb(0x64) & 0x1) {
 
